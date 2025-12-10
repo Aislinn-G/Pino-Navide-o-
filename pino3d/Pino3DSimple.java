@@ -146,14 +146,14 @@ public class Pino3DSimple extends GLJPanel implements GLEventListener, KeyListen
     }
 
     private void dibujarPinoNavideno(GL2 gl) {
-        // 🌟 ESTRELLA en la punta
+        //  ESTRELLA en la punta
         gl.glPushMatrix();
         gl.glColor3f(1.0f, 1.0f, 0.0f); // Amarillo
         gl.glTranslatef(0.0f, 3.5f, 0.0f);
         dibujarEstrella(gl);
         gl.glPopMatrix();
 
-        // 🎄 CAPAS DEL PINO (de arriba hacia abajo)
+        //  CAPAS DEL PINO (de arriba hacia abajo)
         
         // Capa 1 - Superior (más pequeña)
         gl.glPushMatrix();
@@ -176,17 +176,17 @@ public class Pino3DSimple extends GLJPanel implements GLEventListener, KeyListen
         dibujarCapaPino(gl, 0.1f, 2.0f, 1.5f);
         gl.glPopMatrix();
 
-        // 🌲 TRONCO
+        //  TRONCO
         gl.glPushMatrix();
         gl.glColor3f(0.4f, 0.2f, 0.1f); // Marrón
         gl.glTranslatef(0.0f, -1.0f, 0.0f);
         dibujarTronco(gl, 0.3f, 0.4f, 1.2f);
         gl.glPopMatrix();
 
-        // 🎁 REGALOS en la base
+        //  REGALOS en la base
         dibujarRegalos(gl);
         
-        // ✨ ESFERAS DECORATIVAS en el árbol
+        //  ESFERAS DECORATIVAS en el árbol
         dibujarEsferasDecorativas(gl);
     }
 
@@ -445,4 +445,5 @@ public class Pino3DSimple extends GLJPanel implements GLEventListener, KeyListen
     @Override
     public void keyReleased(KeyEvent e) {
     }
+
 }
